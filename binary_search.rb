@@ -15,7 +15,7 @@ low   = 1
 number_of_guesses = 0
 maximum_number_of_guesses = Math.log2(maximum_number).ceil
 while !found && number_of_guesses < maximum_number_of_guesses 
-  guess = low + (high - low ) / 2
+  guess = (high + low ) / 2
   number_of_guesses += 1
   print "Is it #{guess}?(yes|no)"
   found = gets.strip.downcase == "yes"
